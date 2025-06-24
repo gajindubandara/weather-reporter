@@ -13,7 +13,7 @@ A simple and responsive web application that displays the **current weather for 
 
 This is a minimal but powerful **weather reporting web app** that allows users to search for the current weather of any city. It shows detailed information like temperature, humidity, wind speed, UV index, and more — all in a clean and responsive UI.
 
-> 💡 Try it live: [https://your-weather-app.vercel.app](https://your-weather-app.vercel.app)  *(replace with your deployed URL)*
+> 💡 Try it live: [https://weather-reporter-sage.vercel.app](https://weather-reporter-sage.vercel.app)
 
 ---
 
