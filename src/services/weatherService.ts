@@ -21,7 +21,7 @@ export const getCurrentWeather = async (location: string): Promise<WeatherData> 
 
         return response.data;
     } catch (error: any) {
-        console.error('Error fetching weather data:', error.message);
-        throw new Error('Failed to fetch weather data. Please try again later.');
+        console.error('Error fetching weather data:', error.response.data);
+        throw error
     }
 };
