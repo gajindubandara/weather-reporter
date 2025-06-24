@@ -1,69 +1,62 @@
-# React + TypeScript + Vite
+# 🌤 Simple Weather Reporter Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive web application that displays the **current weather for any city**, built using:
 
-Currently, two official plugins are available:
+- ⚛️ **React** (with TypeScript)
+- 🧑‍🚀 **Vite** (for fast development)
+- 🎨 **Ant Design** (for UI components)
+- ☁️ [WeatherAPI](https://www.weatherapi.com/)  (for weather data)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔖 Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This is a minimal but powerful **weather reporting web app** that allows users to search for the current weather of any city. It shows detailed information like temperature, humidity, wind speed, UV index, and more — all in a clean and responsive UI.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+> 💡 Try it live: [https://your-weather-app.vercel.app](https://your-weather-app.vercel.app)  *(replace with your deployed URL)*
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🔧 Features
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+✅ Search weather for any city  
+✅ Responsive layout for mobile, tablet, and desktop  
+✅ Displays key weather metrics:
+- Temperature
+- Feels Like
+- Humidity
+- Wind Speed
+- UV Index
+- Dew Point
+- Pressure
+- Visibility  
+  ✅ Loading state and error handling  
+  ✅ Uses Ant Design components and icons  
+  ✅ Toast notifications on invalid input or API errors
+
+---
+
+## 🧰 Technologies Used
+
+| Tool / Library        | Purpose                         |
+|-----------------------|----------------------------------|
+| Vite                  | Fast build tool & dev server     |
+| React                 | Frontend framework               |
+| TypeScript            | Type-safe code                   |
+| Ant Design (antd)     | UI components                    |
+| React Icons           | Weather-related icons            |
+| Axios                 | HTTP client for API calls        |
+
+---
+
+## 📥 Prerequisites
+
+Before running the project, make sure you have:
+
+- ✅ Node.js (v16 or higher)
+- ✅ npm or yarn installed
+- ✅ A free [WeatherAPI](https://www.weatherapi.com/)  account to get an API key
+
+---
